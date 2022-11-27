@@ -5,7 +5,19 @@
   //align-items: center;
   gap: 30px;
     
-
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+@media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+     // width: 354px;
+     }
+       @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+      //width: 270px;
+     }
+}
 &__item {
   font-weight: 700;
   font-size: 14px;
@@ -32,17 +44,14 @@
   border-radius: 4px;
   width: 100%; 
   //width: 450px;
-  @media screen and (min-width: 768px) {
-      width: calc((100% - 30px) / 2);
-     // width: 354px;
-     }
-       @media screen and (min-width: 1200px) {
-      width: calc((100% - 90px) / 4);
-      //width: 270px;
-     }
+  
 }
 &__section {
   padding-top: 60px;
   padding-bottom: 60px;
+   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 }
