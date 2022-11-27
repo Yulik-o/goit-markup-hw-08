@@ -1,0 +1,48 @@
+.benefits {
+  //align-items: flex-start;
+   display: flex;
+     flex-wrap: wrap;
+  //align-items: center;
+  gap: 30px;
+    
+
+&__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left; 
+  }
+}
+&__card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+ 
+  height: 120px;
+  background-color: var(--portfolio-button);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  width: 100%; 
+  //width: 450px;
+  @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+     // width: 354px;
+     }
+       @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px) / 4);
+      //width: 270px;
+     }
+}
+&__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+}

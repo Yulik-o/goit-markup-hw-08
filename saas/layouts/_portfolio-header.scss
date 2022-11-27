@@ -1,0 +1,33 @@
+.nav-portfolio {
+  position: relative;
+&-second {
+  color: var(--accent-text-color);
+}
+&-second::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+
+  border: 1px solid var(--accent-text-color);
+  background-color: var(--accent-text-color);
+  border-radius: 3px;
+  position: absolute;
+  display: block;
+  bottom: -32px;
+}
+}
+.nav-studio-second {
+  color: var(--primary-text-color);
+}
+.header-border {
+  border: 2px solid var(--border-color);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.blue-portfolio {
+  color: var(--accent-text-color);
+}
+.white-studio {
+  color: var(--primary-text-color);
+}

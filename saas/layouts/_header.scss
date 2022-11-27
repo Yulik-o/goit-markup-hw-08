@@ -1,0 +1,85 @@
+.header {
+  height: 80px;
+&-logo {
+  margin-right: 93px;
+}
+&-email {
+  margin-left: auto;
+}
+}
+
+.site-nav,
+.header-nav,
+.header,
+.header-logo,
+.header-contacts,
+.header-email,
+.tel {
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-color, .tel {
+  color: var(--secondary-text-color);
+}
+.email-icon,
+.tel-icon {
+  margin-right: 10px;
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav,
+.header-contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+   gap: 50px;
+  margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-studio {
+  color: var(--accent-text-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&-first::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+  border: 1px solid var(--accent-text-color);
+  background-color: var(--accent-text-color);
+  border-radius: 3px;
+  position: absolute;
+  display: block;
+  bottom: -32px;
+}
+&:hover, &:focus {
+color: var(--accent-text-color);
+  fill: currentColor;
+}
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus,
+.nav-portfolio:hover,
+.nav-portfolio:focus,
+.email:hover,
+.email:focus,
+.tel:hover,
+.tel:focus,
+.email-icon:hover,
+.email-icon:focus,
+.tel-icon:hover,
+.tel-icon:focus {
+  color: var(--accent-text-color);
+  fill: currentColor;
+}
+
+.nav-portfolio,
+.nav-contacts {
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
