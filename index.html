@@ -121,7 +121,18 @@
         <h2 class="team__title heading-first-page tem-heading">Наша команда</h2>
         <ul class="list staff">
           <li class="staff-member-list">
-            <img src="./img/img1.jpg" alt="фото співробітника" width="270" />
+            <picture>
+              <source srcset="./img/img1.jpg 1x" 
+                            media="(min-width: 1200px)">
+              <source srcset="./img/1photo1px-tab.jpg 1x, 
+              ./img/1photo2px-tab.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./img/1photo1px-mob.jpg 1x, 
+              ./img/1photo2px-mob.jpg 2x"
+              media="(min-width: 480px)">
+              <img src="./img/1photo1px-mob.jpg" alt="фото співробітника" width="450" />
+            </picture>
+            
             <div class="staff-fellow">
               <h3 class="staff-member">Ігор Дем'яненко</h3>
               <p lang="en" class="text member-text">Product Designer</p>
@@ -154,6 +165,17 @@
             </div>
           </li>
           <li class="staff-member-list">
+             <picture>
+              <source srcset="./img/img2.jpg 1x" 
+                            media="(min-width: 1200px)">
+              <source srcset="./img/2photo1px-tab.jpg 1x, 
+              ./img/2photo2px-tab.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./img/2photo1px-mob.jpg 1x, 
+              ./img/2photo2px-mob.jpg 2x"
+              media="(min-width: 480px)">
+              <img src="./img/2photo1px-mob.jpg" alt="фото співробітника" width="450" />
+            </picture>
             <img src="./img/img2.jpg" alt="фото співробітниці" width="270" />
             <div class="staff-fellow">
               <h3 class="staff-member">Ольга Рєпіна</h3>
