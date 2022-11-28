@@ -3,8 +3,17 @@
   padding-bottom: 60px;
    background-color: var(--footer-background);
   & .container {
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    }
   }
   &-contacts {
     font-family: 'Roboto';
@@ -20,9 +29,15 @@
     margin-top: 9px;
   }
   &-right {
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+   @media screen and (min-width: 768px) { 
     justify-content: center;
     align-items: baseline;
     margin-left: 70px;
+   }
   }
 }
 
@@ -64,8 +79,11 @@
   background-color: var(--accent-text-color);
 }
 .footer-right-subscr {
+  @media screen and (min-width: 1200px) { 
   margin-left: 93px;
+  }
 }
+ @media screen and (min-width: 768px) { 
 .footer-subscr-list {
   display: flex;
   position: relative;
@@ -73,6 +91,7 @@
   align-items: baseline;
   gap: 12px;
   margin-top: 20px;
+}
 }
 .footer-input {
   width: 358px;
@@ -94,8 +113,6 @@
   }
 }
 .footer-input-btn {
-  display: flex;
-
   align-items: center;
   text-align: center;
   width: 200px;
@@ -117,12 +134,18 @@
   &:hover {
     background-color: #188ce8;
   }
+     @media screen and (min-width: 768px) { 
+    margin-top: 20px;
+  }
+   @media screen and (min-width: 1200px) {
+     display: flex;
+   } 
 }
 .footer-icon-send {
-  position: absolute;
-  right: 48px;
+ // position: absolute;
+ // right: 48px;
   margin-left: 10px;
-  transform: translateX(50%);
+  //transform: translateX(50%);
   fill: #ffffff;
 }
 .address .city {
@@ -138,4 +161,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+   @media screen and (max-width: 1200px) { 
+    margin-bottom: 20px;
+   }
 }
