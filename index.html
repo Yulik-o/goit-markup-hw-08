@@ -129,8 +129,8 @@
               media="(min-width: 768px)">
               <source srcset="./img/1photo1px-mob.jpg 1x, 
               ./img/1photo2px-mob.jpg 2x"
-              media="(min-width: 480px)">
-              <img src="./img/1photo1px-mob.jpg" alt="фото співробітника" width="450" />
+              media="(max-width: 767px)">
+              <img src="./img/1photo1px-mob.jpg" alt="фото співробітника" width="100%" />
             </picture>
             
             <div class="staff-fellow">
@@ -173,10 +173,10 @@
               media="(min-width: 768px)">
               <source srcset="./img/2photo1px-mob.jpg 1x, 
               ./img/2photo2px-mob.jpg 2x"
-              media="(min-width: 480px)">
-              <img src="./img/2photo1px-mob.jpg" alt="фото співробітника" width="450" />
+              media="(max-width: 767px)">
+              <img src="./img/2photo1px-mob.jpg" alt="фото співробітниці" width="100%" />
             </picture>
-            <img src="./img/img2.jpg" alt="фото співробітниці" width="270" />
+            <!--<img src="./img/img2.jpg" alt="фото співробітниці" width="270" />-->
             <div class="staff-fellow">
               <h3 class="staff-member">Ольга Рєпіна</h3>
               <p lang="en" class="text member-text">Frontend Developer</p>
@@ -209,8 +209,18 @@
             </div>
           </li>
           <li class="staff-member-list">
-            <img src="./img/img3.jpg" alt="фото співробітника" width="270" />
-            <div class="staff-fellow">
+            <picture>
+              <source srcset="./img/img3.jpg 1x" 
+                            media="(min-width: 1200px)">
+              <source srcset="./img/3photo1px-tab.jpg 1x, 
+              ./img/3photo2px-tab.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./img/3photo1px-mob.jpg 1x, 
+              ./img/3photo2px-mob.jpg 2x"
+              media="(max-width: 767px)">
+              <img src="./img/3photo1px-mob.jpg" alt="фото співробітника" width="100%" />
+            </picture>
+                       <div class="staff-fellow">
               <h3 class="staff-member">Микола Тарасов</h3>
               <p lang="en" class="text member-text">Marketing</p>
               <ul class="team-soc-list">
@@ -242,7 +252,18 @@
             </div>
           </li>
           <li class="staff-member-list">
-            <img src="./img/img4.jpg" alt="фото співробітника" width="270" />
+            <picture>
+              <source srcset="./img/img4.jpg 1x" 
+                            media="(min-width: 1200px)">
+              <source srcset="./img/4photo1px-tab.jpg 1x, 
+              ./img/4photo2px-tab.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./img/4photo1px-mob.jpg 1x, 
+              ./img/4photo2px-mob.jpg 2x"
+              media="(max-width: 767px)">
+              <img src="./img/4photo1px-mob.jpg" alt="фото співробітника" width="100%" />
+            </picture>
+            
             <div class="staff-fellow">
               <h3 class="staff-member">Михайло Єрмаков</h3>
               <p lang="en" class="text member-text">UI Designer</p>
