@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1094,6 +1095,19 @@ h2 {
   .join {
     margin-bottom: 20px;
   }
+}
+
+@media screen and (min-width: 768px) and (maх-width: 1199px) {
+  .footer > .container {
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-wrap {
+  flex-basis: calc((100% - 165px) / 2);
 }
 
 .nav-portfolio {
