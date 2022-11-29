@@ -95,7 +95,8 @@
 }
 }
 .footer-input {
-  width: 358px;
+  //width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -172,12 +173,12 @@
   @media screen and (min-width: 768px) and (maх-width: 1199px) { 
 display: flex;
   justify-content: center;
-  gap: 165px;
+  //gap: 165px;
     flex-wrap: wrap;
   //align-items: center;
   }
 }
   .footer-wrap{
-  flex-basis: calc((100% - 165px) / 2);
+  width: calc((100% - 165px) / 2);
   }
 
