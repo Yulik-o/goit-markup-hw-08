@@ -16,7 +16,8 @@
 } 
 }
 .modal {
-  width: 450px;
+  max-width: 450px;
+  width: calc(100vw - 20px);
   min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
